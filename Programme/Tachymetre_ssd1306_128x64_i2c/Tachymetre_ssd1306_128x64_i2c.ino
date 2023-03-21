@@ -52,16 +52,16 @@ void Affichage()
     display.clearDisplay();
     display.setTextColor(SSD1306_WHITE);
     // Rectangle
-    display.drawRect(1, 39, 122,24, SSD1306_WHITE);    
-    display.drawRect(60, 34, 1,5, SSD1306_WHITE);  
-    display.drawRect(122, 31, 1,8, SSD1306_WHITE);    
+    display.drawRect(1, 39, 126,24, SSD1306_WHITE);    
+    display.drawRect(64, 34, 1,5, SSD1306_WHITE);  
+    display.drawRect(126, 31, 1,8, SSD1306_WHITE);    
     display.setTextSize(1);
     display.setCursor(1,30);
     display.print("0");
 
     // Vitesse
-    pourcent = map(comptageImpuls*30,0,12000,0,118);
-    display.setCursor(40,10);
+    pourcent = map(comptageImpuls*30,0,12000,0,126);
+    display.setCursor(44,10);
     display.setTextSize(2);   
     display.print(comptageImpuls*30);
 
